@@ -71,7 +71,7 @@ class ticTacToe {
             printBoard();
             inp();
             
-            if (x < 0 || x > 2 || y < 0 || y > 2 || board[x][y] != empty) {
+            if (x < 0 || x > 2 || y < 0 || y > 2 || board[y][x] != empty) {
                 System.out.println("Invalid move! Input again.");
                 continue;
             }
