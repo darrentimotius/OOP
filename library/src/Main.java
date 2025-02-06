@@ -1,5 +1,4 @@
 public class Main {
-
     public Main() {
     Author author1 = new Author("James Gosling", "Creator of the Java programming language.");
     Author author2 = new Author("Robert C. Martin", "Known for his works on software craftsmanship.");
@@ -25,7 +24,7 @@ public class Main {
     
     library.displayLibraryBooks();
     }
-public static void main(String[] args) {
-    new Main();
+    public static void main(String[] args) {
+        new Main();
     }
 }
