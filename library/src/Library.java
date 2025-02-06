@@ -16,11 +16,12 @@ public class Library {
 
     void returnBook(Borrower borrower, Book book) {
         books.add(book);
-        System.out.println(borrower.getName() + " returned " + book.getTitle());
+        borrower.returnBook(book);
+        System.out.println(borrower.getName() + " returned: " + book.getTitle());
     }
 
     void displayLibraryBooks() {
-        System.out.println("Books in Library : ");
+        System.out.println("Books in Library: ");
         for (Book book : books) {
             book.displayBookInfo();
         }

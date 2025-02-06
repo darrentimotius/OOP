@@ -21,7 +21,7 @@ public class Main {
     library.returnBook(borrower, book1);
 
     borrower.displayBorrowedBooks();
-    
+
     library.displayLibraryBooks();
     }
     public static void main(String[] args) {
