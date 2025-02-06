@@ -1,2 +1,2 @@
-# Jawaban Object-Oriented Programming
+# Jawaban Object-Oriented Programming Lecture
 Do not REDISTRIBUTE this repository!!!
