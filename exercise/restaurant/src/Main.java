@@ -1,17 +1,46 @@
+import java.util.*;
+
 public class Main {
     public Main() {
-        Chef chef1 = new Chef("Gordon Ramsay", "Expert in fine dining and Michelin-star dishes.");
-        Chef chef2 = new Chef("Jamie Oliver", "Famous for healthy and simple recipes.");
+        Scanner scanner = new Scanner(System.in);
 
-        Dish dish1 = new Dish("Beef Wellington", "001", chef1);
-        Dish dish2 = new Dish("Pasta Carbonara", "002", chef2);
+        System.out.print("Input Name Chef 1 : ");
+        String nameChef1 = scanner.nextLine();
+        
+        System.out.print("Input Biography Chef 1 : ");
+        String biography1 = scanner.nextLine();
+        Chef chef1 = new Chef(nameChef1, biography1);
+        
+        System.out.print("Input Name Chef 2 : ");
+        String nameChef2 = scanner.nextLine();
+        
+        System.out.print("Input Biography Chef 2 : ");
+        String biography2 = scanner.nextLine();
+        Chef chef2 = new Chef(nameChef2, biography2);
+
+        System.out.print("Input Dish name 1 : ");
+        String nameDish1 = scanner.nextLine();
+        
+        System.out.print("Input Dish ID 1 : ");
+        String id1 = scanner.nextLine();
+        Dish dish1 = new Dish(nameDish1, id1, chef1);
+        
+        
+        System.out.print("Input Dish name 2 : ");
+        String nameDish2 = scanner.nextLine();
+    
+        System.out.print("Input Dish ID 2 : ");
+        String id2 = scanner.nextLine();
+        Dish dish2 = new Dish(nameDish2, id2, chef2);
 
         Restaurant restaurant = new Restaurant();
 
         restaurant.addDish(dish1);
         restaurant.addDish(dish2);
 
-        Customer customer = new Customer("John");
+        System.out.print("Input Customer Name : ");
+        String nameCustomer = scanner.nextLine();
+        Customer customer = new Customer(nameCustomer);
 
         restaurant.placeOrder(customer, dish1);
         restaurant.placeOrder(customer, dish2);
