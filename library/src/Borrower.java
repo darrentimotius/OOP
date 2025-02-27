@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class Borrower {
-    String name;
-    List <Book> borrowedBooks = new ArrayList<>();
+    private String name;
+    private List <Book> borrowedBooks = new ArrayList<>();
 
     Borrower (String name) {
         this.name = name;
