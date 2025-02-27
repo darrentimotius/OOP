@@ -1,5 +1,4 @@
 public class Main {
-
     public Main() {
         Chef chef1 = new Chef("Gordon Ramsay", "Expert in fine dining and Michelin-star dishes.");
         Chef chef2 = new Chef("Jamie Oliver", "Famous for healthy and simple recipes.");
