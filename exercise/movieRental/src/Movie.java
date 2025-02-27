@@ -28,6 +28,7 @@ public class Movie {
         System.out.println("ID: " + id);
         System.out.println("Director: " + director.getName());
         System.out.println("Biography: " + director.getBiography());
+        System.out.println("------------------------");
     }
 
     /*

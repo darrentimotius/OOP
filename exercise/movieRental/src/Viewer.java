@@ -16,7 +16,6 @@ public class Viewer {
         System.out.println(name + "'s Rented Movies:");
         for (Movie movie : rentedMovies) {
             movie.printMovie();
-            System.out.println("------------------------");
         }
     }
 }
